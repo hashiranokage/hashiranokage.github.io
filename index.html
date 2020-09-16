@@ -403,6 +403,12 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>Draft of '3連のリズムの場合'</li>
+
+<li>Draft of 'Sunvox'</li>
+
+<li>Draft of 'Tickについて'</li>
+
 <li>MacOSXでの挙動</li>
 
 <li>Sunvox</li>
@@ -10053,8 +10059,8 @@ Error message and password prompt
 <div created="20200902052244205" modified="20200902052244205" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20200902050925515" modified="20200902152350680" title="$:/state/sidebar">
-<pre>no</pre>
+<div created="20200902050925515" modified="20200916093311181" title="$:/state/sidebar">
+<pre>yes</pre>
 </div>
 <div created="20200826105233833" modified="20200826105233833" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
@@ -10074,7 +10080,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200902151611633" list="目次 Sunvox [[Sunvox Tips]] MacOSXでの挙動" modified="20200902152347191" title="$:/StoryList">
+<div created="20200916093314322" list="目次 [[Draft of 'Sunvox']] [[Sunvox Tips]] [[Draft of 'Tickについて']] [[Draft of '3連のリズムの場合']]" modified="20200916093533134" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200902052103367" modified="20200902052103367" title="$:/temp/HidePluginWarning">
@@ -11205,6 +11211,28 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
         }
     }
 }</pre>
+</div>
+<div created="20200916093629447" draft.of="3連のリズムの場合" draft.title="3連のリズムの場合" modified="20200916094049879" title="Draft of '3連のリズムの場合'">
+<pre>1Line=8分音符3連にする場合は1Line=4Ticksに設定する．
+
+このように設定することで，１小節=24Linesになり，正しく3連のリズムを入力できる．</pre>
+</div>
+<div created="20200901035916078" draft.of="Sunvox" draft.title="Sunvox" modified="20200916093507754" tags="Sunvox" title="Draft of 'Sunvox'" type="text/x-markdown">
+<pre>Sunvoxに関する情報．
+* [Sunvox Tips](#Sunvox%20Tips)</pre>
+</div>
+<div created="20200902045448807" draft.of="Tickについて" draft.title="Tickについて" modified="20200916093523845" tags="Sunvox Tips" title="Draft of 'Tickについて'" type="text/x-markdown">
+<pre>Line当たりのTick数（Ticks Per Line）の変更：
+Main menu &gt; Project propaties
+
+![Project propaties](img/sunvox/20200902144640.png)
+
+デフォルトでは1Line=6Ticksなので，♩ = 6 x 4 = 24Ticksになる．
+Ticks Per Lineの変更はテンポに影響を与える（値を半分にすると曲のテンポは2倍になる）．
+きちんと調整しないと1Line=16分音符の関係性が崩れる．
+
+[3連のリズムの場合](#3連のリズムの場合)
+</pre>
 </div>
 <div created="20200902151900397" modified="20200902152514120" title="MacOSXでの挙動" type="text/x-markdown">
 <pre>LaunchPadから起動した場合，パターンのコピー&amp;ペーストが機能しない等一部正常でない挙動が認められる（ver.10.14.6で確認）．
