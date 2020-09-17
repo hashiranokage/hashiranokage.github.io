@@ -407,6 +407,8 @@ Error message and password prompt
 
 <li>MacOSXでの挙動</li>
 
+<li>previm</li>
+
 <li>Sunvox</li>
 
 <li>Sunvox Tips</li>
@@ -10082,7 +10084,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200917132119172" list="目次 Vim 使用しているプラグイン Vundle" modified="20200917132835295" title="$:/StoryList">
+<div created="20200917132119172" list="目次 Vim 使用しているプラグイン previm Vundle" modified="20200917133959696" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200902052103367" modified="20200902052103367" title="$:/temp/HidePluginWarning">
@@ -11220,6 +11222,17 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200902151900397" modified="20200902152514120" title="MacOSXでの挙動" type="text/x-markdown">
 <pre>LaunchPadから起動した場合，パターンのコピー&amp;ペーストが機能しない等一部正常でない挙動が認められる（ver.10.14.6で確認）．
 回避するにはコマンドラインから実行する．</pre>
+</div>
+<div created="20200917134005664" modified="20200917134409344" title="previm" type="text/x-markdown">
+<pre>.vimrcに以下を追加する．（Chromeを使用する場合）
+
+```
+&quot; previmで開くブラウザを設定
+let g:previm_open_cmd = 'open -a Google\ Chrome'
+```
+
+Markdownファイルを開いて，:PrevimOpenを実行するとブラウザが開く．
+あとはバッファを保存するごとにプレビューが更新される．</pre>
 </div>
 <div created="20200901035916078" modified="20200902053948171" tags="Sunvox" title="Sunvox" type="text/x-markdown">
 <pre>Sunvoxに関する情報．
