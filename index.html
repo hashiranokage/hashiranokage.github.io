@@ -419,6 +419,8 @@ Error message and password prompt
 
 <li>Vim</li>
 
+<li>Vundle</li>
+
 <li>使用しているプラグイン</li>
 
 <li>目次</li>
@@ -10080,7 +10082,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200917132119172" list="目次 Vim 使用しているプラグイン" modified="20200917132231330" title="$:/StoryList">
+<div created="20200917132119172" list="目次 Vim 使用しているプラグイン Vundle" modified="20200917132835295" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200902052103367" modified="20200902052103367" title="$:/temp/HidePluginWarning">
@@ -11252,6 +11254,27 @@ Ticks Per Lineの変更はテンポに影響を与える（値を半分にする
 </div>
 <div created="20200917132133268" modified="20200917132236145" title="Vim" type="text/x-markdown">
 <pre>[使用しているプラグイン](#使用しているプラグイン)</pre>
+</div>
+<div created="20200917132841372" modified="20200917133921161" title="Vundle" type="text/x-markdown">
+<pre>以下を.vimrcの先頭に記述する．
+
+```Vim script:.vimrc
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+&quot; 導入したいプラグインを以下に列挙
+&quot; Plugin '[Github Author]/[Github repo]' の形式で記入
+&quot; 例：Plugin 'airblade/vim-gitgutter'
+
+call vundle#end()
+filetype plugin indent on
+```
+
+:PluginInstallを実行すると自動でインストールされる．</pre>
 </div>
 <div created="20200917132332542" modified="20200917132530073" title="使用しているプラグイン" type="text/x-markdown">
 <pre>[Vundle](#Vundle)
