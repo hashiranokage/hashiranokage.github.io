@@ -10063,20 +10063,20 @@ Error message and password prompt
 <div created="20200902052244205" modified="20200902052244205" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20200902050925515" modified="20200902152350680" title="$:/state/sidebar">
+<div created="20200902050925515" modified="20200917140257995" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20200826105233833" modified="20200826105233833" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
-<div created="20200826103819166" modified="20200902052024666" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20200826103819166" modified="20200917140144763" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200826103820798" modified="20200826103820798" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200901040509004" modified="20200902063140338" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200901040509004" modified="20200917140200982" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div created="20200826105315064" modified="20200826105408280" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
@@ -10084,7 +10084,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200917134502162" list="目次 Vim 使用しているプラグイン previm" modified="20200917134504953" title="$:/StoryList">
+<div created="20200917135612891" list="目次 Vim 使用しているプラグイン Vundle" modified="20200917140137557" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200902052103367" modified="20200902052103367" title="$:/temp/HidePluginWarning">
@@ -11268,8 +11268,16 @@ Ticks Per Lineの変更はテンポに影響を与える（値を半分にする
 <div created="20200917132133268" modified="20200917132236145" title="Vim" type="text/x-markdown">
 <pre>[使用しているプラグイン](#使用しているプラグイン)</pre>
 </div>
-<div created="20200917132841372" modified="20200917133921161" title="Vundle" type="text/x-markdown">
-<pre>以下を.vimrcの先頭に記述する．
+<div created="20200917132841372" modified="20200917140610342" title="Vundle" type="text/x-markdown">
+<pre>Githubのリポジトリ：[https://github.com/VundleVim](https://github.com/VundleVim)
+
+~/.vim/bundle以下にVundle.vimを配置する．
+
+```
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+以下を.vimrcの先頭に記述する．
 
 ```Vim script:.vimrc
 set nocompatible
@@ -11287,7 +11295,8 @@ call vundle#end()
 filetype plugin indent on
 ```
 
-:PluginInstallを実行すると自動でインストールされる．</pre>
+:PluginInstallを実行すると自動でインストールされる．
+</pre>
 </div>
 <div created="20200917132332542" modified="20200917134712046" title="使用しているプラグイン" type="text/x-markdown">
 <pre>[Vundle](#Vundle)（プラグイン管理）
