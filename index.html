@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -403,11 +405,9 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>01-03 Slide up, Slide down, Slide to note</li>
+<li>01-SlideUp</li>
 
 <li>3連のリズムの場合</li>
-
-<li>Draft of '01-03 Slide up, Slide down, Slide to note'</li>
 
 <li>MacOSXでの挙動</li>
 
@@ -452,6 +452,9 @@ Error message and password prompt
 </div>
 <div created="20200826105417863" modified="20200826105417863" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
 <pre>show</pre>
+</div>
+<div created="20210526095529994" modified="20210526095529994" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -10090,7 +10093,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210526094610659" list="[[Draft of '01-03 Slide up, Slide down, Slide to note']] 目次 Sunvox [[Sunvox Tips]]" modified="20210526095127678" title="$:/StoryList">
+<div created="20210526095503245" list="01-SlideUp 目次 Sunvox [[Sunvox Tips]]" modified="20210526095512685" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200902052103367" modified="20200902052103367" title="$:/temp/HidePluginWarning">
@@ -11222,7 +11225,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
     }
 }</pre>
 </div>
-<div created="20210526093821200" modified="20210526094544344" tags="Sunvox Tips [[Pattern Effects]]" title="01-03 Slide up, Slide down, Slide to note" type="text/x-markdown">
+<div created="20210526093821200" modified="20210526095532031" tags="Sunvox Tips [[Pattern Effects]]" title="01-SlideUp" type="text/x-markdown">
 <pre>これらの値は，1Tickあたりどれだけの音程をスライドさせるかを設定する．
 
 40 = one semitoneなので，（16進数で）40に設定すると，1Lineあたり6Tickの場合は半音6個分，80に設定すると半音12個分，すなわち1オクターブスライドする．これを元に計算すればよい．</pre>
@@ -11231,11 +11234,6 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <pre>3連のリズムの場合は，1Line=4Ticksに設定することで1小節=24Linesに設定される．
 
 ※Pattern，Tempoともに1.5倍に設定したほうが分かりやすいし細かく表現できるのでそっちのほうがいいかも．</pre>
-</div>
-<div created="20210526093821200" draft.of="01-03 Slide up, Slide down, Slide to note" draft.title="01-03 Slide up, Slide down, Slide to note" modified="20210526095147773" tags="Sunvox Tips [[Pattern Effects]]" title="Draft of '01-03 Slide up, Slide down, Slide to note'" type="text/x-markdown">
-<pre>これらの値は，1Tickあたりどれだけの音程をスライドさせるかを設定する．
-
-40 = one semitoneなので，（16進数で）40に設定すると，1Lineあたり6Tickの場合は半音6個分，80に設定すると半音12個分，すなわち1オクターブスライドする．これを元に計算すればよい．</pre>
 </div>
 <div created="20200902151900397" modified="20200902152514120" title="MacOSXでの挙動" type="text/x-markdown">
 <pre>LaunchPadから起動した場合，パターンのコピー&amp;ペーストが機能しない等一部正常でない挙動が認められる（ver.10.14.6で確認）．
