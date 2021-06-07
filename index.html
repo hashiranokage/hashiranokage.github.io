@@ -413,7 +413,11 @@ Error message and password prompt
 
 <li>3連のリズムの場合</li>
 
+<li>Draft of 'Sunvox Tips'</li>
+
 <li>MacOSXでの挙動</li>
+
+<li>Metamodule</li>
 
 <li>Modules</li>
 
@@ -10099,7 +10103,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210607152407794" list="Modules 目次 Sunvox [[Sunvox Tips]]" modified="20210607152409648" title="$:/StoryList">
+<div created="20210607152407794" list="Metamodule Modules 目次 Sunvox [[Draft of 'Sunvox Tips']]" modified="20210607152409648" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200902052103367" modified="20200902052103367" title="$:/temp/HidePluginWarning">
@@ -11251,14 +11255,35 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 ※Pattern，Tempoともに1.5倍に設定したほうが分かりやすいし細かく表現できるのでそっちのほうがいいかも．</pre>
 </div>
+<div created="20200901040808279" draft.of="Sunvox Tips" draft.title="Sunvox Tips" modified="20210607152725996" tags="Sunvox Tips" title="Draft of 'Sunvox Tips'" type="text/x-markdown">
+<pre>Sunvoxを利用する上で役に立つ情報
+* [基本的なこと](#基本的なこと)
+  * [MacOSXでの挙動](#MacOSXでの挙動)
+* [Tickについて](#Tickについて)
+  * [3連のリズムの場合](#3連のリズムの場合)
+* [Modules](#Modules)
+* [Pattern\ Effects](#Pattern\ Effects)
+  * [01-SlideUp](#01-SlideUp)
+  * [02-SlideDown](#02-SlideDown)
+  * [03-SlideToNote](#03-SlideToNote)
+</pre>
+</div>
 <div created="20200902151900397" modified="20200902152514120" title="MacOSXでの挙動" type="text/x-markdown">
 <pre>LaunchPadから起動した場合，パターンのコピー&amp;ペーストが機能しない等一部正常でない挙動が認められる（ver.10.14.6で確認）．
 回避するにはコマンドラインから実行する．</pre>
 </div>
-<div created="20210607152513512" modified="20210607152717085" tags="Modules Sunvox Tips" title="Modules" type="text/x-markdown">
+<div created="20210607152805296" modified="20210607153518971" tags="Modules Sunvox Tips" title="Metamodule" type="text/x-markdown">
+<pre>1. プロジェクト内でモジュール化したい音色を作成し，.sunvoxファイルに保存する
+2. 新規にMetamoduleを開く
+3. Editでモジュール内に入り，1で作成したプロジェクトを開く
+4. Backでモジュールから出て，Input module（外部からの入力を受け取るモジュール）を設定する
+5. saveで.sunsynthファイルとして保存する
+6. 使用する場合はプロジェクト内でsunsynthファイルをloadする</pre>
+</div>
+<div created="20210607152513512" modified="20210607152750134" tags="Modules Sunvox Tips" title="Modules" type="text/x-markdown">
 <pre>Moduleの使い方など
 
-* Metamodule(#Metamodule)</pre>
+* [Metamodule](#Metamodule)</pre>
 </div>
 <div created="20200917134005664" modified="20200917141814480" tags="plugin Vim Markdown" title="previm" type="text/x-markdown">
 <pre>.vimrcに以下を追加する．（Chromeを使用する場合）
